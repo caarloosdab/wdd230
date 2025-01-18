@@ -51,6 +51,10 @@ nav a:hover {
     background-color: #555;
 }
 
+.active {
+    background-color: #555;
+}
+
 /* Center the main element and set a max-width */
 main {
     max-width: 400px;
