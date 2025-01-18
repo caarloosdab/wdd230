@@ -1,4 +1,11 @@
-/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;;
+}
+
+
 body {
     font-family: "Varela", serif;
     font-weight: 400;
@@ -7,25 +14,29 @@ body {
     padding: 0;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #f4f4f4;
+header h1{
+    background-color: #023047;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    align-content: center;
 }
 
 header img {
+    position: absolute;
+    left: 6%;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 5%;
 }
 
-/* Navigation links in a column for mobile view */
+
 nav {
     display: flex;
     flex-direction: column;
+    background-color: #ffb703;
+    color: black;
     align-items: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 1rem;
 }
 
 nav a {
@@ -62,21 +73,49 @@ main h1 {
 
 /* Style the cards */
 .card {
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    border: 2px solid #023047;
+    margin: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
-/* Remove bullets from the course links list */
-ul {
+.card h2{
+    background-color: #023047;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.card h3{
+    text-align: center;
+    border-bottom: 2px solid #023047;
+    width: 300px;
+    padding: 10px;
+}
+
+.card p{
+    margin: 15px;
+    line-height: 1.5;
+}
+
+
+.card a, ul{
+
+    margin: 15px;
+    width: 100%;
+    line-height: 1.5;
     list-style-type: none;
+    text-decoration: none;
     padding-left: 0;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #023047;
+    color: #fff;
+    
 }
 
 footer p {
