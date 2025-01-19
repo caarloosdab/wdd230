@@ -1,35 +1,23 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;;
+    font-family: "Open Sans", sans-serif;
 }
 
-
+/* Main body styles */
 body {
     font-family: "Varela", serif;
     font-weight: 400;
     font-style: normal;
-    margin: 0;
-    padding: 0;
 }
 
-header{
+/* Header */
+header {
     height: 6.3rem;
     background-color: #023047;
-    align-content: center;
+    position: relative;
 }
-
-span{
-    background-color: #023047;
-    color: #fff;
-    text-align: center;
-    font-size: larger;
-    position: absolute;
-    left: 50% ;
-}
-
-
 
 header img {
     position: absolute;
@@ -39,54 +27,66 @@ header img {
     top: 0;
 }
 
+span {
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+/* Navigation Menu */
 nav {
     display: flex;
     flex-direction: column;
     background-color: #ffb703;
-    color: black;
     align-items: center;
     padding: 1rem;
 }
 
+nav .hamburger {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Menu links, hidden by default on smaller screens */
 nav a {
+    display: none; /* Hidden initially */
     text-decoration: none;
     color: black;
     padding: 10px;
     border-bottom: 1px solid white;
-    
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #555;
 }
 
-.active {
-    background-color: #555;
-    color: #fff;
+/* Show links when 'show' class is added to nav */
+nav.show a {
+    display: block;
 }
 
-/* Center the main element and set a max-width */
+/* Light and Dark Mode styles */
 main {
     max-width: 400px;
     margin: 0 auto;
     padding: 10px;
 }
 
-main h1 {
-    font-size: larger;
-    text-decoration: underline;
+main.dark-mode {
+    background-color: #333;
+    color: #fff;
 }
 
-/* Grid layout for main sections (1 column in mobile view) */
-.container {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-}
-
-/* Style the cards */
+/* Card Styles */
 .card {
     border: 2px solid #023047;
     margin: 15px;
@@ -94,7 +94,7 @@ main h1 {
     padding-bottom: 10px;
 }
 
-.card h2{
+.card h2 {
     background-color: #023047;
     margin: 0;
     padding: 10px;
@@ -102,37 +102,39 @@ main h1 {
     color: #fff;
 }
 
-.card h3{
-    text-align: center;
-    border-bottom: 2px solid #023047;
-    width: 300px;
-    padding: 10px;
-}
-
-.card p{
-    margin: 15px;
-    line-height: 1.5;
-}
-
-
-.card a, ul{
-
-    margin: 15px;
-    width: 100%;
-    line-height: 1.5;
-    list-style-type: none;
-    text-decoration: none;
-    padding-left: 0;
-}
-
 footer {
     text-align: center;
     padding: 20px;
     background-color: #023047;
     color: #fff;
-    
 }
 
-footer p {
-    margin: 5px;
+/* Responsive styles for screens with a max width of 38rem (mobile) */
+@media only screen and (max-width: 38rem) {
+    nav .hamburger {
+        display: block; /* Show hamburger button on mobile */
+    }
+
+    /* Hide menu links by default */
+    nav a {
+        display: none;
+    }
+
+    /* Menu links shown when 'show' class is added to nav */
+    nav.show a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Dark Mode toggle button in header */
+    #darkModeToggle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 }

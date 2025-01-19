@@ -3,64 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos De Avila  - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="This is the course assignment portal for the class: WDD 230 - Web Frontend Development and my name is Carlos De Avila Bravo">
+    <title>Carlos De Avila - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Course assignment portal for the class: WDD 230 - Web Frontend Development">
     <meta name="author" content="Carlos De Avila">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela&display=swap" rel="stylesheet">
-    
-    <meta property="og:title" content="Home page" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://caarloosdab.github.io/wdd230/" />
-    <meta property="og:image" content="https://cdn.contexttravel.com/image/upload/w_1500,q_60/v1683045973/blog/Traveler%27s%20Guide%20to%20the%20Best%20Things%20to%20Do%20in%20Mexico%20City/38.jpg" />
 </head>
 <body>
     <header>
-        <img src="images/carlos.PNG" alt="me in a picture">
+        <img src="images/carlos.PNG" alt="Carlos De Avila">
         <span>Carlos De Avila</span>
+        <button id="darkModeToggle">🌙</button>
     </header>
     <nav>
+        <button class="hamburger" aria-label="Toggle menu">≡</button>
         <a href="#" class="active">Home</a>
         <a href="#">Chamber</a>
         <a href="week01/chamber-site-plan.html">Site Plan</a>
         <a href="#">Form</a>
     </nav>
-    
+
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="container">
-
             <section class="card">
                 <h2>Learning Activities</h2>
                 <ul>
                     <li>
                         <p>Week 01:</p>
-                        <p>Week 02:<a href="week02/design.html">Web Design Principles</a> <a href="https://codepen.io/caarloosdab/pen/dPbjKVV">Responsive "Hamburger" Menu</a></p>
+                        <p>Week 02: <a href="week02/design.html">Web Design Principles</a> <a href="https://codepen.io/caarloosdab/pen/dPbjKVV">Responsive "Hamburger" Menu</a></p>
                         <p><a href="#">Link</a></p>
-                        <p><a href="#">Link</a></p>                
-    
                     </li>
                 </ul>
             </section>
-    
+
             <section class="card">
                 <h2>Information</h2>
                 <p>Weather</p>
-                <p>number of visits</p>
+                <p>Number of visits</p>
             </section>
         </div>
-        
     </main>
-    <footer>
-        <p>&copy;2025 - Carlos De Avila - Mexico city</p>
-        <p id="lastModified"></p>
 
+    <footer>
+        <p>&copy;2025 - Carlos De Avila - Mexico City</p>
+        <p id="lastModified"></p>
     </footer>
-<script src="scripts/getDates.js"></script>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

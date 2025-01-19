@@ -2,7 +2,7 @@
 @media only screen and (min-width:38rem ) {
 
     header {
-        
+        display: flex;
         align-items: center;
     }
 
@@ -11,12 +11,14 @@
     }
 
     nav {
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
     nav a {
-        border: none;
+        display: inline-block;
+        
         border-right: 1px solid white;
     }
 
@@ -24,9 +26,14 @@
         border-right: none;
     }
 
+    .hamburger {
+        display: none;
+    }
+
     main {
         max-width: 600px;
     }
+
 
     .container {
         display: grid;
@@ -40,7 +47,8 @@
         
     }
     .card a{
-        min-width: 900px;
+        width: 100%;
+        text-align: center;
     }
 
 }
