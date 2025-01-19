@@ -1,20 +1,20 @@
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ECF0F1; /* Light grayish blue */
+    background-color: #F1F2F6; /* Very light gray */
     color: #2C3E50; /* Dark blueish gray */
 }
 
 header {
-    background-color: #34495E; /* Dark grayish blue */
-    color: #ECF0F1; /* Light grayish blue */
+    background-color: #2C3E50; /* Dark blueish gray */
+    color: #F1F2F6; /* Very light gray */
     padding: 1rem;
     text-align: center;
 }
@@ -44,21 +44,24 @@ h2 {
 p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    color: #7F8C8D; /* Medium gray */
+    color: #3b5052; /* Medium gray */
+}
+
+.intro a {
+    color: #2C3E50;
 }
 
 a {
     text-decoration: none;
-    color: black; /* Light grayish blue */
-    background-color: #2980B9; /* Bright blue */
+    color: #F1F2F6; /* Very light gray */
+    background-color: #3498DB; /* Bright blue */
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 a:hover {
-    background-color: #3498DB; /* Slightly lighter blue for hover */
-
+    background-color: #2980B9; /* Slightly darker blue for hover */
 }
 
 img {
@@ -79,8 +82,8 @@ section {
 
 /* Footer */
 footer {
-    background-color: #34495E; /* Dark grayish blue */
-    color: #ECF0F1; /* Light grayish blue */
+    background-color: #2C3E50; /* Dark blueish gray */
+    color: #F1F2F6; /* Very light gray */
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
@@ -88,6 +91,7 @@ footer {
 
 footer p {
     margin: 0;
+    color: #F1F2F6;
 }
 
 /* Media queries */
