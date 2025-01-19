@@ -20,40 +20,33 @@
 <body>
     <header>
         <nav>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-
+            <button class="hamburger" aria-label="Toggle menu">≡</button>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
         </nav>
-
     </header>
 
     <main>
         <img src="images/hero.jpeg" alt="hero image">
-        <div class ="intro">
-            <h1><b> CHAMBER OF COMMERCE</b></h1>
-                <p><b>Looking to start a new business?</b></p>
-                <a href="#">JOIN</a>
-
+        <div class="intro">
+            <h1><b>CHAMBER OF COMMERCE</b></h1>
+            <p><b>Looking to start a new business?</b></p>
+            <a href="#">JOIN</a>
         </div>
 
-        <section>
+        <section class="events">
             <div>
-                <h2>
-                   Current events 
-                </h2>
-
+                <h2>Current events</h2>
             </div>
         </section>
 
-        <section>
-            <h2>
-                Weather
-            </h2>
+        <section class="weather">
+            <h2>Weather</h2>
         </section>
 
-        <section>
+        <section class="advertisement">
             <div>
                 <h2>Advertisement</h2>
             </div>
@@ -61,15 +54,14 @@
                 <h2>Advertisement</h2>
             </div>
         </section>
-        
-
     </main>
 
     <footer>
         <p>Contact info #8764598 - Carlos De Avila - WDD230 Project</p>
-
+        <p id="lastModified"></p>
     </footer>
-    
-    
+
+    <!-- JavaScript for Hamburger Toggle -->
+    <script src="scripts/getDate.js"></script>
 </body>
 </html>
