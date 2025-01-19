@@ -94,6 +94,10 @@ main.dark-mode {
     padding-bottom: 10px;
 }
 
+.card ul {
+    margin: 2.5rem;
+}
+
 .card h2 {
     background-color: #023047;
     margin: 0;
