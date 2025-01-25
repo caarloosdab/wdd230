@@ -74,19 +74,27 @@ nav.show a {
     display: block;
 }
 
+nav.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* Main Content */
 main {
     max-width: 100%;
     margin: 0 auto;
     padding: 10px;
 }
 
-main img{
+main img {
     width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
     border-radius: 10px;
 }
 
-main .overlay{
+main .overlay {
     text-align: center;
     width: 35%;
     position: absolute;
@@ -100,30 +108,23 @@ main .overlay{
     opacity: 0.5;
 }
 
-
 /* Light and Dark Mode styles */
-
-body.dark-mode a:active{
+body.dark-mode a:active {
     color: rgb(202, 195, 195);
 }
 
-body.dark-mode a:visited{
+body.dark-mode a:visited {
     color: white;
 }
 
-body.dark-mode nav{
+body.dark-mode nav {
     background-color: #61450a;
-    
 }
 
-
-body.dark-mode{
+body.dark-mode {
     background-color: #333;
     color: white;
-    
-
 }
-
 
 /* Card Styles */
 .card {
@@ -145,20 +146,24 @@ body.dark-mode{
     color: #fff;
 }
 
+/* Map Container with Aspect Ratio */
 .map-container {
     margin-left: 5%;
     width: 90%;
     position: relative;
     overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect ratio */
 }
 
 .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     border: 0;
     display: block;
-    height: 300px; /* Default height for smaller views */
 }
-
 
 footer {
     text-align: center;
@@ -167,17 +172,16 @@ footer {
     color: #fff;
 }
 
-
 /* Responsive styles for screens with a max width of 38rem (mobile) */
 @media only screen and (max-width: 38rem) {
 
-    body.dark-mode nav .hamburger{
+    body.dark-mode nav .hamburger {
         color: #ffb803;
     }
+
     nav .hamburger {
         display: block; /* Show hamburger button on mobile */
         color: #61450a;
-    
     }
 
     /* Hide menu links by default */
@@ -191,7 +195,7 @@ footer {
         width: 100%;
         text-align: center;
     }
-    
+
     /* Dark Mode toggle button in header */
     #darkModeToggle {
         color: white;
