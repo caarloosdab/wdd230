@@ -31,7 +31,18 @@
     }
 
     main {
-        max-width: 600px;
+        max-width: 100%;
+    }
+
+    main .overlay{
+        padding: 30px;
+    }
+
+    main img{
+        width: 100%;
+    }
+    .map-container iframe {
+        height: 300px; /* Height for larger views */
     }
 
 

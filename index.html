@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela&display=swap" rel="stylesheet">
-
     <meta property="og:title" content="Home page">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://caarloosdab.github.io/wdd230/">
@@ -19,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/carlos.PNG" alt="Carlos De Avila">
+        <img loading="lazy" src="images/carlos.webp" alt="Carlos De Avila">
         <span>Carlos De Avila</span>
         <button id="darkModeToggle">🌙</button>
     </header>
@@ -32,6 +31,14 @@
     </nav>
 
     <main>
+        <picture>
+            <source srcset="week03/images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="week03/images/hero-medium.webp" media="(max-width: 960px)">
+            <img loading="lazy" src="week03/images/hero-large.webp" alt="Mexico city temple" width="1000">
+        </picture>
+        <div class="overlay">
+            <h3>Mexico city temple</h3>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="container">
             <section class="card">
@@ -48,17 +55,29 @@
             <section class="card">
                 <h2>Information</h2>
                 <p>Weather</p>
-                <p>Number of visits</p>
+                <p>Number of visits: <b id="visitCounter">0</b></p>
             </section>
         </div>
     </main>
+
+    <!-- Google Map iframe -->
+    <div class="map-container">
+        <iframe 
+            loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.3534301952267!2d-99.13320868468402!3d19.43260798689356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b4d7e7d0d%3A0x7d6dfc8c8a01902d!2sMexico%20City!5e0!3m2!1sen!2smx!4v1694531215143!5m2!1sen!2smx"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+        </iframe>
+    </div>
 
     <footer>
         <p>&copy;2025 - Carlos De Avila - Mexico City</p>
         <p id="lastModified"></p>
     </footer>
 
+    <!-- Scripts -->
     <script src="scripts/getDates.js"></script>
-    
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>

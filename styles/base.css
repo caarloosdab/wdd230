@@ -74,12 +74,34 @@ nav.show a {
     display: block;
 }
 
-/* Light and Dark Mode styles */
+
 main {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 10px;
 }
+
+main img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .overlay{
+    text-align: center;
+    width: 35%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: larger;
+    background-color: black;
+    opacity: 0.5;
+}
+
+
+/* Light and Dark Mode styles */
 
 body.dark-mode a:active{
     color: rgb(202, 195, 195);
@@ -123,12 +145,28 @@ body.dark-mode{
     color: #fff;
 }
 
+.map-container {
+    margin-left: 5%;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: 0;
+    display: block;
+    height: 300px; /* Default height for smaller views */
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: #023047;
     color: #fff;
 }
+
 
 /* Responsive styles for screens with a max width of 38rem (mobile) */
 @media only screen and (max-width: 38rem) {
