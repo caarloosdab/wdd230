@@ -1,0 +1,52 @@
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column; /* Stack header, main, footer vertically */
+    justify-content: space-between; /* Space out header, main, and footer */
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Optional: background color for contrast */
+}
+
+header, footer {
+    text-align: center; /* Center header and footer text */
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Ensure footer stays at the bottom */
+footer {
+    margin-top: auto;
+}
+
+/* Center the images in the main section */
+main {
+    display: flex;
+    flex-direction: column; /* Stack images in a column */
+    align-items: center; /* Center the column content horizontally */
+    padding: 20px 0;
+}
+
+/* Styling for images */
+main img {
+    display: block;
+    margin-bottom: 20px; /* Space between images */
+    width: 100%; /* Ensure images are responsive */
+    max-width: 400px; /* Optional: set max width */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply the fade animation */
+    opacity: 0; /* Initially invisible for the fade-in effect */
+}
+
+/* Keyframes for the fade-in from black animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0); /* Start as black */
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1); /* End as normal image */
+    }
+}
