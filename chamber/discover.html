@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos De Avila - WDD 230 - Chamber of Commerce</title>
+    <meta name="description" content="Course assignment portal for the class: WDD 230 - Web Frontend Development">
+    <meta name="author" content="Carlos De Avila">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber Home page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caarloosdab.github.io/wdd230/">
+    <meta property="og:image" content="https://cdn.contexttravel.com/image/upload/w_1500,q_60/v1683045973/blog/Traveler%27s%20Guide%20to%20the%20Best%20Things%20to%20Do%20in%20Mexico%20City/38.jpg">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">≡</button>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <!-- Sidebar Section -->
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <h2>Visitor Info</h2>
+                    <p id="visitMessage">Loading...</p>
+                </div>
+                <div class="sidebar-content">
+                    <h2>Demographics</h2>
+                    <p>Age: 28</p>
+                    <p>Location: Mexico City</p>
+                </div>
+                <div class="sidebar-content">
+                    <h2>Events</h2>
+                    <ul>
+                        <li>Event 1: Concert</li>
+                        <li>Event 2: Festival</li>
+                        <li>Event 3: Art Exhibition</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Image Gallery Section -->
+            <section class="gallery">
+                <h2>Local Photos</h2>
+                <div class="photo-grid">
+                    <picture>
+                        <img data-src="images/photo1.webp" alt="Photo 1" class="lazy-load" />
+                        <figcaption>Chapultepec</figcaption>
+                    </picture>
+
+                    <picture>
+                        <img data-src="images/photo2.webp" alt="Photo 1" class="lazy-load" />
+                        <figcaption>Athropology museum</figcaption>
+                    </picture>
+                    <picture>
+                        <img data-src="images/photo3.webp" alt="Photo 1" class="lazy-load" />
+                        <figcaption>Reforma</figcaption>
+                    </picture>
+                    <picture>
+                        <img data-src="images/photo4.webp" alt="Photo 1" class="lazy-load" />
+                        <figcaption>Postal palace</figcaption>
+                    </picture>
+                    <picture>
+                        <img data-src="images/photo5.webp" alt="Photo 1" class="lazy-load" />
+                        <figcaption>Bellas Artes</figcaption>
+                    </picture>
+                    <picture>
+                        <img data-src="images/photo6.webp" alt="Photo 1" class="lazy-load" />
+                        <figcaption>Frida Khalo's house</figcaption>
+                    </picture>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact info #8764598 - Carlos De Avila - WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript for Hamburger Toggle -->
+    <script src="scripts/getDate.js"></script>
+</body>
+</html>
