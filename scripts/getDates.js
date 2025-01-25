@@ -15,7 +15,7 @@ lastModifiedParagraph.textContent = `Last Modification: ${lastModified}`;
 
 
 const darkModeToggle = document.getElementById('darkModeToggle');
-const main = document.querySelector('main');
+const main = document.querySelector('body');
 
 // When the dark mode toggle is clicked
 darkModeToggle.addEventListener('click', () => {

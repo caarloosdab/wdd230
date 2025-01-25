@@ -40,7 +40,7 @@ span {
 nav {
     display: flex;
     flex-direction: column;
-    background-color: #ffb703;
+    background-color: #ffb803;
     align-items: center;
     padding: 1rem;
 }
@@ -81,10 +81,27 @@ main {
     padding: 10px;
 }
 
-main.dark-mode {
-    background-color: #333;
-    color: #fff;
+body.dark-mode a:active{
+    color: rgb(202, 195, 195);
 }
+
+body.dark-mode a:visited{
+    color: white;
+}
+
+body.dark-mode nav{
+    background-color: #61450a;
+    
+}
+
+
+body.dark-mode{
+    background-color: #333;
+    color: white;
+    
+
+}
+
 
 /* Card Styles */
 .card {
@@ -115,8 +132,14 @@ footer {
 
 /* Responsive styles for screens with a max width of 38rem (mobile) */
 @media only screen and (max-width: 38rem) {
+
+    body.dark-mode nav .hamburger{
+        color: #ffb803;
+    }
     nav .hamburger {
         display: block; /* Show hamburger button on mobile */
+        color: #61450a;
+    
     }
 
     /* Hide menu links by default */
@@ -133,6 +156,7 @@ footer {
     
     /* Dark Mode toggle button in header */
     #darkModeToggle {
+        color: white;
         position: absolute;
         top: 10px;
         right: 10px;
