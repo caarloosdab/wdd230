@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="A sample web page demonstrating responsive images with the picture element.">
+    <link rel="stylesheet" href="styles/">
+</head>
+<body>
+    <main>
+        <!-- Hero Section with Responsive Images -->
+        <div class="hero">
+            <picture>
+                <!-- Source for small image -->
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <!-- Source for medium image -->
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <!-- Fallback large image -->
+                <img src="images/hero-large.webp" alt="Table setting with elegant decor" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
