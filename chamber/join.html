@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos De Avila - WDD 230 - Join Chamber of Commerce</title>
+    <meta name="description" content="Course assignment portal for the class: WDD 230 - Web Frontend Development">
+    <meta name="author" content="Carlos De Avila">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber Home page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caarloosdab.github.io/wdd230/">
+    <meta property="og:image" content="https://cdn.contexttravel.com/image/upload/w_1500,q_60/v1683045973/blog/Traveler%27s%20Guide%20to%20the%20Best%20Things%20to%20Do%20in%20Mexico%20City/38.jpg">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">≡</button>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="discover.html">Events</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Join the Chamber of Commerce</h2>
+            <div class="grid-container">
+                <!-- Membership Selection -->
+                <!-- Membership Selection -->
+<div class="membership-types">
+    <h3>Select Membership Type</h3>
+    <div class="membership-grid">
+        <button class="membership-btn" data-membership="np" data-cost="$0" 
+            data-benefits="Access to networking events, basic listing on the chamber directory.">
+            NP Membership (Non-Profit)
+        </button>
+        <button class="membership-btn" data-membership="bronze" data-cost="$50/month" 
+            data-benefits="All NP benefits + discounted event tickets, training sessions.">
+            Bronze Membership
+        </button>
+        <button class="membership-btn" data-membership="silver" data-cost="$100/month" 
+            data-benefits="All Bronze benefits + advertising on chamber homepage, spotlight feature.">
+            Silver Membership
+        </button>
+        <button class="membership-btn" data-membership="gold" data-cost="$200/month" 
+            data-benefits="All Silver benefits + priority event access, premium ad placements.">
+            Gold Membership
+        </button>
+    </div>
+</div>
+
+<!-- Membership Benefits Display -->
+<div class="membership-benefits" id="membershipBenefits">
+    <h3>Membership Benefits</h3>
+    <p id="benefitDescription">Click a membership to see benefits</p>
+</div>
+        
+                <!-- Form Section (hidden initially) -->
+                <div class="form-container" id="formContainer">
+                    <form action="thankyou.html" method="get">
+                        <!-- Applicant's First Name -->
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="form-input" required>
+        
+                        <!-- Applicant's Last Name -->
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="form-input" required>
+        
+                        <!-- Title or Position -->
+                        <label for="title">Title / Position</label>
+                        <input type="text" id="title" name="title" class="form-input" required>
+        
+                        <!-- Email Address -->
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required placeholder="example@domain.com">
+        
+                        <!-- Mobile Phone Number -->
+                        <label for="phone">Mobile Phone</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+        
+                        <!-- Business Name -->
+                        <label for="businessName">Business Name</label>
+                        <input type="text" id="businessName" name="businessName" class="form-input" required>
+        
+                        <!-- Membership Level (hidden initially, will be filled via JS) -->
+                        <input type="hidden" id="membershipLevel" name="membershipLevel">
+        
+                        <!-- Timestamp (hidden) -->
+                        <input type="hidden" id="timestamp" name="timestamp">
+        
+                        <!-- Business Description -->
+                        <label for="description">Business Description</label>
+                        <textarea id="description" name="description" class="form-input" rows="4" required></textarea>
+        
+                        <!-- Submit Button -->
+                        <input type="submit" value="Submit Application" class="form-button">
+                    </form>
+                </div>
+            </div>
+        </section>
+              
+        
+       
+
+
+    </main>
+
+    <footer>
+        <p>Contact info #8764598 - Carlos De Avila - WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript for Hamburger Toggle -->
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
