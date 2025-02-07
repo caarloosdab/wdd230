@@ -1,0 +1,24 @@
+{
+    "familyName": "De Avila Bravo",
+    "moveInDate": "02-02-2025",
+    "familySize": 4,
+    "bishopricVisit": "yes",
+    "members": [
+        {
+            "name": "Juan",
+            "gender": "M",
+            "birthdate": "02-12-2000"
+        },
+        {
+            "name": "Ana",
+            "gender": "F",
+            "birthdate": "05-15-2002"
+        },
+        {
+            "name": "Pedro",
+            "gender": "M",
+            "birthdate": "08-20-2004"
+        }
+    ]
+
+}
