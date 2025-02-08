@@ -27,7 +27,7 @@ function displayMembers(members, viewType) {
                 <h3>${member.name}</h3>
                 <p><strong>Address:</strong> ${member.address}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
-                <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.name}</a></p>
                 <p><strong>Membership Level:</strong> ${member.membership_level}</p>
                 <p><strong>Founded:</strong> ${member.additional_info.founded}</p>
                 <p><strong>CEO:</strong> ${member.additional_info.CEO}</p>
