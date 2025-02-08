@@ -253,6 +253,34 @@ form label {
     text-align: center;
 }
 
+
+.members.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.members.list-view {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.member-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.member-info {
+    text-align: left;
+}
+
 @media (min-width: 768px) {
     .grid-container {
         display: grid;

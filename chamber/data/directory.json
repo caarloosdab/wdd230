@@ -1,0 +1,96 @@
+{
+    "companies": [
+      {
+        "name": "Tech Innovators Inc.",
+        "address": "1234 Silicon Valley Blvd, San Francisco, CA 94105",
+        "phone": "+1-415-555-1234",
+        "website": "https://www.techinnovators.com",
+        "icon": "tech_innovators_logo.png",
+        "membership_level": "Platinum",
+        "additional_info": {
+          "founded": "2008",
+          "CEO": "Jane Doe",
+          "services": ["Software Development", "IT Consulting"]
+        }
+      },
+      {
+        "name": "Green Energy Solutions",
+        "address": "9876 Eco Way, Austin, TX 73301",
+        "phone": "+1-512-555-5678",
+        "website": "https://www.greenenergysolutions.com",
+        "icon": "green_energy_logo.png",
+        "membership_level": "Gold",
+        "additional_info": {
+          "founded": "2012",
+          "CEO": "John Smith",
+          "services": ["Renewable Energy", "Sustainability Consulting"]
+        }
+      },
+      {
+        "name": "Urban Architects",
+        "address": "456 Cityscape Ave, New York, NY 10001",
+        "phone": "+1-212-555-7890",
+        "website": "https://www.urbanarchitects.com",
+        "icon": "urban_architects_logo.png",
+        "membership_level": "Silver",
+        "additional_info": {
+          "founded": "1995",
+          "CEO": "Emily White",
+          "services": ["Architecture", "Interior Design"]
+        }
+      },
+      {
+        "name": "Health First Clinic",
+        "address": "432 Wellness St, Los Angeles, CA 90001",
+        "phone": "+1-310-555-2345",
+        "website": "https://www.healthfirst.com",
+        "icon": "health_first_logo.png",
+        "membership_level": "Gold",
+        "additional_info": {
+          "founded": "2010",
+          "CEO": "Dr. Sarah Lee",
+          "services": ["General Medicine", "Pediatrics", "Dermatology"]
+        }
+      },
+      {
+        "name": "Peak Financial Group",
+        "address": "789 Wealth Rd, Chicago, IL 60601",
+        "phone": "+1-312-555-6789",
+        "website": "https://www.peakfinancial.com",
+        "icon": "peak_financial_logo.png",
+        "membership_level": "Platinum",
+        "additional_info": {
+          "founded": "2000",
+          "CEO": "Michael Brown",
+          "services": ["Investment Banking", "Wealth Management"]
+        }
+      },
+      {
+        "name": "Gourmet Delights",
+        "address": "567 Culinary Ln, Miami, FL 33101",
+        "phone": "+1-305-555-3456",
+        "website": "https://www.gourmetdelights.com",
+        "icon": "gourmet_delights_logo.png",
+        "membership_level": "Silver",
+        "additional_info": {
+          "founded": "2018",
+          "CEO": "Chef Maria Gonzalez",
+          "services": ["Catering", "Private Dining"]
+        }
+      },
+      {
+        "name": "Adventure Outdoors",
+        "address": "654 Nature Trl, Denver, CO 80202",
+        "phone": "+1-303-555-4567",
+        "website": "https://www.adventureoutdoors.com",
+        "icon": "adventure_outdoors_logo.png",
+        "membership_level": "Bronze",
+        "additional_info": {
+          "founded": "2015",
+          "CEO": "Jake Thompson",
+          "services": ["Outdoor Gear", "Adventure Tours"]
+        }
+      }
+    ]
+  }
+  
