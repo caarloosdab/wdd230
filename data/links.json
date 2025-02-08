@@ -1,0 +1,82 @@
+{
+    "weeks": [
+      {
+        "week": "Week 01",
+        "links": [
+          {
+            "url": "week01/activity1.html",
+            "title": "Intro to HTML"
+          },
+          {
+            "url": "week01/activity2.html",
+            "title": "Basic HTML Structure"
+          }
+        ]
+      },
+      {
+        "week": "Week 02",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "Web Design Principles"
+          },
+          {
+            "url": "https://codepen.io/caarloosdab/pen/dPbjKVV",
+            "title": "Responsive \"Hamburger\" Menu"
+          }
+        ]
+      },
+      {
+        "week": "Week 03",
+        "links": [
+          {
+            "url": "week03/images/landscape.webp",
+            "title": "WebP"
+          },
+          {
+            "url": "week03/lazyload.html",
+            "title": "Lazy Load"
+          }
+        ]
+      },
+      {
+        "week": "Week 04",
+        "links": [
+          {
+            "url": "https://codepen.io/caarloosdab/pen/ByBEpxd",
+            "title": "Pseudo classes"
+          },
+          {
+            "url": "images/combinator%20excercises.PNG",
+            "title": "Combinator Exercises"
+          },
+          {
+            "url": "week04/tablebuild.html",
+            "title": "Table Build"
+          }
+        ]
+      },
+      {
+        "week": "Week 05",
+        "links": [
+          {
+            "url": "https://codepen.io/caarloosdab/pen/azoedMb",
+            "title": "CSS Pseudo-elements"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "JSON"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "Fetch API"
+          },
+          {
+            "url": "week05/weather.html",
+            "title": "Weather API"
+          }
+        ]
+      }
+    ]
+  }
+  
