@@ -130,8 +130,56 @@ body.dark-mode {
 .card {
     border: 2px solid #023047;
     margin: 15px;
-    border-radius: 10px;
     padding-bottom: 10px;
+    border-radius: 10px;
+    
+    text-align: center;
+    align-items: center;
+
+}
+
+.card h2{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Information Section Styles (Weather & Visits) */
+.card .overlay {
+    margin: 1rem 0; /* Add margin around the overlay content */
+}
+
+.card p {
+    margin-bottom: 1rem; /* Add margin between paragraphs */
+}
+
+.card #visitCounter {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card #weather-icon {
+    width: 50px;
+    margin-bottom: 1rem; /* Add space below the icon */
+}
+
+
+/* Map Container with Aspect Ratio */
+.map-container {
+    margin-left: 5%;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect ratio */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
 }
 
 .card ul {
@@ -145,6 +193,8 @@ body.dark-mode {
     text-align: center;
     color: #fff;
 }
+
+
 
 /* Map Container with Aspect Ratio */
 .map-container {

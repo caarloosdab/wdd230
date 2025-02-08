@@ -4,15 +4,21 @@ const linksURL = "https://caarloosdab.github.io/wdd230/data/links.json"; // URL 
 
 // Step 2: Asynchronous function to fetch the links data
 async function getLinks() {
-  try {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    // Step 4: Call the displayLinks function to process and display the data
-    displayLinks(data);
-  } catch (error) {
-    console.error("Error fetching the links:", error);
+    try {
+      const response = await fetch(linksURL);
+      const data = await response.json();
+      console.log(data); // Log the data to ensure it's correct
+  
+      // Check if weeks is an array before passing it to displayLinks
+      if (Array.isArray(data.weeks)) {
+        displayLinks(data.weeks); // Call displayLinks with weeks data
+      } else {
+        console.error("The 'weeks' property is not an array:", data);
+      }
+    } catch (error) {
+      console.error("Error fetching the links:", error);
+    }
   }
-}
 
 // Step 3: Create the displayLinks function to process the data and display it in HTML
 function displayLinks(weeks) {
@@ -23,16 +29,16 @@ function displayLinks(weeks) {
   weeks.forEach(week => {
     // Create a new list item for each week
     const weekItem = document.createElement('li');
-    const weekTitle = document.createElement('p');
-    weekTitle.textContent = week.week; // Display the week number/title
+    const weekTitle = document.createElement('a');
+    weekTitle.textContent = week.week + ": "; // Display the week number/title
     weekItem.appendChild(weekTitle);
 
     // Loop through each link in the week and create a list item for each link
     week.links.forEach(link => {
-      const linkItem = document.createElement('p');
+      const linkItem = document.createElement('a');
       const linkElement = document.createElement('a');
-      linkElement.href = baseURL + link.url; // Use the base URL and link URL
-      linkElement.textContent = link.title; // Set the link title
+      linkElement.href = link.url; // Use the base URL and link URL
+      linkElement.textContent = link.title + "  |  "; // Set the link title
       linkItem.appendChild(linkElement);
       weekItem.appendChild(linkItem);
     });
