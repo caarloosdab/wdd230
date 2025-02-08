@@ -6,51 +6,55 @@
     <title>Carlos De Avila - WDD 230 - company directory for the chamber of commerce</title>
     <meta name="description" content="company directory for the chamber of commerce">
     <meta name="author" content="Carlos De Avila">
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/larger.css">
-    <link rel="icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Home page">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber Home page">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://caarloosdab.github.io/wdd230/">
     <meta property="og:image" content="https://cdn.contexttravel.com/image/upload/w_1500,q_60/v1683045973/blog/Traveler%27s%20Guide%20to%20the%20Best%20Things%20to%20Do%20in%20Mexico%20City/38.jpg">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 <body>
     <header>
-        <img loading="lazy" src="/images/carlos.webp" alt="Carlos De Avila">
-        <span>Carlos De Avila</span>
-        <button id="darkModeToggle">🌙</button>
+        <nav>
+            <button class="hamburger" aria-label="Toggle menu">≡</button>
+            <a href="index.html">Home</a>
+            <a href="dir.html">About</a>
+            <a href="discover.html">Events</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <button class="hamburger" aria-label="Toggle menu">≡</button>
-        <a href="#" class="active">Home</a>
-        <a href="/chamber/index.html">Chamber</a>
-        <a href="/week01/chamber-site-plan.html">Site Plan</a>
-        <a href="/form.html">Form</a>
-    </nav>
-    <div class="view-toggle">
-        <button id="gridViewBtn">Grid View</button>
-        <button id="listViewBtn">List View</button>
-    </div>
 
     <main>
-        <div class="container">
-            
-            <div id="membersContainer" class="members grid-view"></div>
+        <img src="images/hero.jpeg" alt="hero image">
+        <div class="intro">
+            <h1><b>CHAMBER OF COMMERCE IN MEXICO CITY</b></h1>
+            <p><b>Looking to start a new business?</b></p>
+            <a href="join.html">JOIN</a>
         </div>
-    </main>
+
+        <div class="view-toggle">
+            <button id="gridViewBtn">Grid View</button>
+            <button id="listViewBtn">List View</button>
+        </div>
+    
+        <main>
+            <div class="container">
+                
+                <div id="membersContainer" class="members grid-view"></div>
+            </div>
+        </main>
 
     <footer>
-        <p>&copy;2025 - Carlos De Avila - Mexico City</p>
+        <p>Contact info #8764598 - Carlos De Avila - WDD230 Project</p>
         <p id="lastModified"></p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/scripts/getDates.js"></script>
-    <script src="/scripts/visitCounter.js"></script>
-    <script src="/scripts/links.js"></script>
-    <script src="/scripts/weather.js"></script>
+    <!-- JavaScript for Hamburger Toggle -->
+    <script src="scripts/getDate.js"></script>
     <script src="scripts/directory.js"></script>
 </body>
 </html>
