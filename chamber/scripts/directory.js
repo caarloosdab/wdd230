@@ -1,5 +1,5 @@
 // Fetch the JSON data
-fetch('data/directory.json')
+fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
         const members = data.companies;
