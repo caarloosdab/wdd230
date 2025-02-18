@@ -63,12 +63,26 @@ p {
     background-color: #2980B9;
 }
 
-img {
+main img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     border-radius: 5px;
 }
+
+/*.events img {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: -400px;
+    width: 690px;
+    height: 90px;
+
+}*/
+
+.events img{
+    margin-left: -20px;
+}
+
 
 section {
     background-color: #fff;
@@ -157,6 +171,10 @@ footer p {
 
 
 /* Base Styles */
+
+.form-section {
+    background-color: #BDC3C7;
+}
 .form-container {
     display: none; /* Hidden initially */
     grid-template-columns: 1fr auto; /* Two columns for larger screens */
@@ -199,6 +217,10 @@ form label {
 
 .form-button:hover {
     background-color: #2980B9;
+}
+
+.weather img {
+    width: 100px;
 }
 
 /* Membership Type Buttons */

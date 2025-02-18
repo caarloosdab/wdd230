@@ -6,7 +6,7 @@
     <title>Carlos De Avila - WDD 230 - Chamber of Commerce and discover</title>
     <meta name="description" content="Course assignment portal for the class: WDD 230 - Web Frontend Development">
     <meta name="author" content="Carlos De Avila">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
     <meta property="og:title" content="Chamber Home page">
     <meta property="og:type" content="website">
@@ -23,9 +23,8 @@
             <button class="hamburger" aria-label="Toggle menu">≡</button>
             <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
-            <a href="#">About</a>
             <a href="discover.html">Events</a>
-            <a href="#">Contact</a>
+            <a href="join.html">Contact</a>
         </nav>
     </header>
 
@@ -40,11 +39,16 @@
         <section class="events">
             <div>
                 <h2>Current events</h2>
+                <a href="discover.html"><img src="images/skyline.jpeg" alt="events pic"></a>
+                
             </div>
         </section>
 
         <section class="weather">
             <h2>Weather</h2>
+                <p id="weather-description">Current weather description</p>
+                <p id="weather-temperature">Current temperature: 0&deg;F</p>
+                <img id="weather-icon" src="" alt="Weather icon">
         </section>
 
         <section class="advertisement">
@@ -64,5 +68,6 @@
 
     <!-- JavaScript for Hamburger Toggle -->
     <script src="scripts/getDate.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
