@@ -45,13 +45,13 @@ const gridViewBtn = document.getElementById('gridViewBtn');
 const listViewBtn = document.getElementById('listViewBtn');
 
 gridViewBtn.addEventListener('click', () => {
-    fetch('data/directory.json')
+    fetch('data/members.json')
         .then(response => response.json())
         .then(data => displayMembers(data.companies, 'grid'));
 });
 
 listViewBtn.addEventListener('click', () => {
-    fetch('data/directory.json')
+    fetch('data/members.json')
         .then(response => response.json())
         .then(data => displayMembers(data.companies, 'list'));
 });
