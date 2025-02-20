@@ -1,0 +1,20 @@
+{
+    "members": [
+      {
+        "name": "Tech Solutions Co.",
+        "level": "Gold",
+        "description": "Providing innovative tech solutions for over 20 years."
+      },
+      {
+        "name": "Green Energy Ltd.",
+        "level": "Silver",
+        "description": "Leading provider of sustainable energy solutions."
+      },
+      {
+        "name": "Health First Clinic",
+        "level": "Gold",
+        "description": "A family-owned health clinic focused on patient care."
+      }
+    ]
+  }
+  

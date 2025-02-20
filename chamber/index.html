@@ -36,6 +36,8 @@
             <a href="join.html">JOIN</a>
         </div>
 
+        <div id="meet-greet-banner"></div>
+
         <section class="events">
             <div>
                 <h2>Current events</h2>
@@ -49,16 +51,21 @@
                 <p id="weather-description">Current weather description</p>
                 <p id="weather-temperature">Current temperature: 0&deg;F</p>
                 <img id="weather-icon" src="#" alt="Weather icon">
+
+            <div class="forecast">
+                <h2>Forecast</h2>
+                <p></p> <!-- Current temperature will be inserted here -->
+                <p></p> <!-- Weather description will be inserted here -->
+                <img src="#" alt="forecast icon"> <!-- Icon for current weather -->
+                <div class="forecast"></div> <!-- Container for the 3-day forecast -->
+            </div>
         </section>
 
         <section class="advertisement">
-            <div>
-                <h2>Advertisement</h2>
-            </div>
-            <div>
-                <h2>Advertisement</h2>
-            </div>
+            <h2>Spotlight on Chamber Members</h2>
+            <div id="chamber-members"></div> <!-- This will be filled dynamically with JSON data -->
         </section>
+        
     </main>
 
     <footer>
@@ -69,5 +76,9 @@
     <!-- JavaScript for Hamburger Toggle -->
     <script src="scripts/getDate.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/meetGreetBanner.js"></script>
+    <script src="scripts/spotlightMembers.js"></script>
+
 </body>
 </html>
